@@ -18,9 +18,6 @@ public class Nodo {
 		return poolOfTs;
 	}
 	
-	public int CalcularHash(int PW,Vector<Transaction> poolOfT) {
-		return PW*poolOfT.size(); //Representacion de calculo del hash
-	}
 	
 	private Bloque GenBloque() {
 		long hash = 0;

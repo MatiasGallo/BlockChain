@@ -4,9 +4,9 @@ public class Transaction {
 	private int to;
 	private int value;
 	private String nota;
-	private long signature;
+	private FirmaDigital signature;
 	
-	public Transaction(int f,int t,int v,String n,long s) {
+	public Transaction(int f,int t,int v,String n,FirmaDigital s) {
 		from = f;
 		to = t;
 		value = v;
@@ -25,7 +25,7 @@ public class Transaction {
 	public String getNota() {
 		return nota;
 	}
-	public long getSignature(){
+	public FirmaDigital getSignature(){
 		return signature;
 	}
 }
